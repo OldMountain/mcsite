@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+.title {
+    height: 50px;
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, .1);
+    margin: 0;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.bar1 {
+    width: 100%;
+    height: 90px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 0px 50px 0 #888888;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    opacity: 0;
+    position: absolute;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px 0px 50px 0 #888888;
+    /*display: none;*/
+}
+
+.banner .dot {
+    position: relative;
+    text-align: right;
+    top: 160px;
+    right: 20px;
+}
+
+.dot span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-color: #888888;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.dot .active {
+    background-color: #2890E0;
+}
+
+.bar1 > div {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+.bar1 > div > span {
+    display: block;
+}
+
+.bar1 > div > div {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #F2B011;
+}

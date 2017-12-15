@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    swal({
+        title:"标题"
+        ,text:"删除成功"//提示内容
+        ,className: ""
+        ,icon: "success" //warning,error.info
+//            ,button:{       //button: "OK" or button:false
+//                text: "OK",
+//                value: true,
+//                visible: true, //是否显示按钮
+//                className: "nxd-green",
+//                closeModal: false,
+//            }
+        ,buttons:{   //buttons: ["Stop", "Do it!"],
+            cancel: {
+                text: "Cancel",
+                value: null,
+                visible: true,
+                className: "juzhong",
+                closeModal: true,
+            },
+            confirm: {
+                text: "OK",
+                value: true,
+                visible: true,
+                className: "",
+                closeModal: true
+            }
+        }
+        ,content: $("#id")[0]
+        ,closeOnClickOutside:false //点击外面不隐藏提示框
+        ,closeOnEsc:false          //Esc不隐藏提示框
+//            ,timer: 3000
+    }).then(function (value) {
+        alert(value)
+    });
+</script>
+</html>
