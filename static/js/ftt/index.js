@@ -1,7 +1,7 @@
 ;
 var img = ["2.jpg", "2.png", "3.png", "4.png"];
 var index = 3;
-var rootPath = "static/images/banner/";
+var rootPath = "http://120.79.62.108/images/mc/banner/";
 $(function () {
     $(".banner .dot").before('<img class="active" src="' + rootPath + img[0] + '">')
     $(".banner .dot").append('<span class="active"></span>')
